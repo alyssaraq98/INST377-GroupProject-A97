@@ -23,10 +23,6 @@ app.use((req, res, next) => {
 app.route('/api')
   .get((req, res) => {
     console.log('GET request detected');
-    const data = await fetch('https://data.princegeorgescountymd.gov/resource/bh8z-9wkk.json');
-    const json = await data.json();
-    console.log('PG County data from fetch', json);
-    res.json(json);
   })
   .post(async (req, res) => {
     const data = await fetch('https://data.princegeorgescountymd.gov/resource/bh8z-9wkk.json');
