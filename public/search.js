@@ -30,7 +30,7 @@ function displayMatches() {
         html = matchArray.map(place => {
             return `
             <ul>
-                <button onclick="window.location.href='https://inst377-group-project-a97.herokuapp.com/data.html'" type="button">
+                <button onclick="window.location.href='/data.html'" type="button">
                     <span class="name">${place.payee_name.toLowerCase()}</span><br>
                 </button>
             </ul>
