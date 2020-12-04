@@ -8,7 +8,9 @@ fetch(endpoint)
 
 console.log(agencies);
 
-// let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name.value()])])];
+let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name.value()])])];
+
+console.log(newAgencies);
 
 function findMatches(wordToMatch) {
     return agencies.filter(place => {
@@ -28,7 +30,7 @@ function displayMatches() {
         html = matchArray.map(place => {
             return `
             <ul>
-                <button>
+                <button onclick="window.location.href='https://inst377-group-project-a97.herokuapp.com/data.html'" type="button">
                     <span class="name">${place.payee_name.toLowerCase()}</span><br>
                 </button>
             </ul>
