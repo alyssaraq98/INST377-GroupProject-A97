@@ -8,6 +8,8 @@ fetch(endpoint)
 
 console.log(agencies);
 
+// let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name.value()])])];
+
 function findMatches(wordToMatch) {
     return agencies.filter(place => {
         const regex = new RegExp(wordToMatch, 'gi');
