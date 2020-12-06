@@ -5,6 +5,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 
+
+
 dotenv.config();
 
 const app = express();
@@ -23,10 +25,11 @@ app.use((req, res, next) => {
 app.route('/api')
   .get((req, res) => {
     console.log('GET request detected');
-  })
+    res.send('Got it');
+  }) 
   .post(async (req, res) => {
-    const data = await fetch('https://data.princegeorgescountymd.gov/resource/bh8z-9wkk.json');
     console.log('POST request detected');
+    const data = await fetch('https://data.princegeorgescountymd.gov/resource/uh6s-izyj.json');
     const json = await data.json();
     console.log('Fetch request data', data);
     res.json(json);
