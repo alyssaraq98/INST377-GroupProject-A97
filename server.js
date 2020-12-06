@@ -27,7 +27,6 @@ app.route('/api')
     console.log('GET request detected');
     res.send('Got it');
   }) 
-
   .post(async (req, res) => {
     console.log('POST request detected');
     const data = await fetch('https://data.princegeorgescountymd.gov/resource/uh6s-izyj.json');
