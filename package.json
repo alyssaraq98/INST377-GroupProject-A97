@@ -1,5 +1,5 @@
 {
-  "name": "inst377-fa2020",
+  "name": "group_a97_project",
   "version": "1.0.0",
   "description": "Repository for INST377 Dynamic Web Applications Fall 2020 at UMD",
   "main": "index.js",
@@ -12,7 +12,7 @@
   "engines": {
     "node": "13.x"
   },
-  "author": "Alex Leitch",
+  "author": "Group A97",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
@@ -32,5 +32,13 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-import": "^2.22.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyssaraq98/INST377-GroupProject-A97.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alyssaraq98/INST377-GroupProject-A97/issues"
+  },
+  "homepage": "https://github.com/alyssaraq98/INST377-GroupProject-A97#readme"
 }
