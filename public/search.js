@@ -8,7 +8,7 @@ fetch(endpoint)
 
 console.log(agencies);
 
-let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name.value()])])];
+let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name])])];
 
 console.log(newAgencies);
 
@@ -45,3 +45,15 @@ const searchInput = document.querySelector('.searchInput');
 const suggestions = document.querySelector('.filteredList');
 
 searchInput.addEventListener('keyup', displayMatches);
+
+// Banner Section
+
+document.getElementById("home").onclick = function () {
+    location.href = "/index.html";
+}
+document.getElementById("about").onclick = function () {
+    location.href = "/about.html";
+}
+document.getElementById("search").onclick = function () {
+    location.href = "/search.html";
+}
