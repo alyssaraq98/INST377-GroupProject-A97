@@ -8,7 +8,7 @@ fetch(endpoint)
 
 console.log(agencies);
 
-let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name.value()])])];
+let newAgencies = [...new Set([...agencies.map(newAgencies => agencies[newAgencies.payee_name])])];
 
 console.log(newAgencies);
 
