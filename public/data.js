@@ -50,18 +50,17 @@ function convertAgenciesToCategories(agencyList) {
       },
       axisX: {
         interval: 1,
-        labelFontSize: 12
+        labelFontSize: 12,
       },
-      axisY2: {
-        interlacedColor: 'rgba(1,77,101,.2)',
-        gridColor: 'rgba(1,77,101,.1)',
+      axisY: {
         title: 'Agency Count',
         labelFontSize: 12,
+        includeZero: true,
       },
       data: [{
         type: 'column',
-        name: 'restaurants',
-        axisYType: 'secondary',
+        name: 'Agencies',
+        yValueFormatString: "#,### Agency Count",
         dataPoints: datapointsFromAgencyList
       }]
     };
