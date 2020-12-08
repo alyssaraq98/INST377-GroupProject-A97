@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Data Page</title>
+        <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
     </head>
     <body>
         <h1>Data Page</h1>
@@ -13,6 +18,12 @@
         <button id="search" class="banner">Search</button>
         
         <button id="backButton">Back to Search Page</button>
+
+        <div id="chartContainer"></div>
+        <form>
+            <button type="submit" class="submitButton" name="submitButton">Bar Graph</button>
+        </form>
+        <script src="canvasjs.min.js"></script>
         <script src="data.js"></script>
     </body>
 </html>
