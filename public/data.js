@@ -1,5 +1,4 @@
 // Banner Section
-
 document.getElementById("home").onclick = function () {
     location.href = "/index.html";
 }
@@ -14,3 +13,84 @@ document.getElementById("search").onclick = function () {
 document.getElementById("backButton").onclick = function () {
     location.href = "/search.html";
 }
+
+// Data Visualization Section
+function convertAgenciesToCategories(agencyList) {
+    const newDataShape = agencyList.reduce((collection, item, i) => {
+        const findCat = collection.find((findItem) => findItem.label === item.agency);
+  
+        if (!findCat) {
+            collection.push({
+            label: item.agency,
+            y: 1
+        });
+        } else {   
+            const position = collection.findIndex((el) => el.label === item.agency);
+            collection[position].y += 1;
+        }
+        return collection;
+    }, []);
+    
+    console.log(newDataShape);
+  
+    return newDataShape;
+  }
+  
+  function makeYourOptionsObject(datapointsFromAgencyList) {
+    CanvasJS.addColorSet('customColorSet1', [
+        '#F0A80A',
+        '#900AFA',
+    ]);
+  
+    return {
+      animationEnabled: true,
+      colorSet: 'customColorSet1',
+      title: {
+        text: 'Counts of Agencies in PG County'
+      },
+      axisX: {
+        interval: 1,
+        labelFontSize: 12
+      },
+      axisY2: {
+        interlacedColor: 'rgba(1,77,101,.2)',
+        gridColor: 'rgba(1,77,101,.1)',
+        title: 'Agency Count',
+        labelFontSize: 12,
+      },
+      data: [{
+        type: 'column',
+        name: 'restaurants',
+        axisYType: 'secondary',
+        dataPoints: datapointsFromAgencyList
+      }]
+    };
+  }
+
+  function runThisWithResultsFromServer(jsonFromServer) {
+    console.log('jsonFromServer', jsonFromServer);
+    sessionStorage.setItem('agencyList', JSON.stringify(jsonFromServer));
+  
+    const reorganizedData = convertAgenciesToCategories(jsonFromServer);
+    const options = makeYourOptionsObject(reorganizedData);
+    const chart = new CanvasJS.Chart('chartContainer', options);
+    chart.render();
+  }
+
+document.body.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = $(e.target).serializeArray();
+    console.log(form);
+    fetch('/api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+    })
+      .then((fromServer) => fromServer.json())
+      .then((jsonFromServer) => runThisWithResultsFromServer(jsonFromServer))
+      .catch((err) => {
+        console.log(err);
+      });
+  });
