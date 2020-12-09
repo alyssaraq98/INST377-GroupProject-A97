@@ -1,5 +1,38 @@
-body {
+/*body {
     background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/25/23/36/national-harbor.jpg?w=1000&h=600&s=1");
     background-repeat: no-repeat;
     background-size: auto;
+  }*/
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+    position: fixed;
+    top: 0;
+    width: 75%;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
   }
