@@ -1,14 +1,18 @@
 # Final Documentation for INST377 Group Project Team A97
 
 Title: PG County Tax Information
+
 Team Members: 
     - Andrew Carroll
     - Alyssa Raqueno
     - Hong Tu
     - Eman Wasel
     - Seaenna Yang
+
 Link to Application: https://inst377-group-project-a97.herokuapp.com/
+
 Information Problem We're Trying to Solve: Visualizing Tax Data from Various Prince George's County Businesses
+
 Data Chosen to Work With:
     - Prince George's County Spending Information for FY 2014-2016
 
