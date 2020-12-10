@@ -1,10 +1,12 @@
 # INST377-GroupProject-A97
-Repository for INST377 class group project
+
+Project Title: PG County Tax Information
+Heroku Link: https://inst377-group-project-a97.herokuapp.com/
 
 Top Half of README TODO:
-- Title of your project
+- ~~Title of your project~~
 - Description of your project
-- Link to the Heroku instance where your application can be used
+- ~~Link to the Heroku instance where your application can be used~~
 - Description of target browsers (iOS? Android? Which ones? Which versions?)
 - Link to User Manual
 - Link to Developer Manual
