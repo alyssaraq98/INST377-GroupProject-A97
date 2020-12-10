@@ -7,17 +7,19 @@
     <body>
         <h1>Search Page</h1>
 
-        <h2>TO STYLE: Banner Section</h2>
-        <button id="home" class="banner">Home</button>
-        <button id="about" class="banner">About</button>
-        <button id="search" class="banner">Search</button>
+        <div class="banner">
+            <h2>TO STYLE: Banner Section</h2>
+            <button id="home" class="bannerButton">Home</button>
+            <button id="about" class="bannerButton">About</button>
+            <button id="search" class="bannerButton">Search</button>
+        </div>
 
-        <form>
-            <input class="searchInput" placeholder="Filter by Business Name" type="text" id="search" name="search">
-            <div class="navigatonBox">
-                <ul class="filteredList"></ul>
-            </div>
-        </form>
+        <div class="years">
+            <h3>Select A Year</h3>
+            <button id="yearOne" class="yearButton">2014</button>
+            <button id="yearTwo" class="yearButton">2015</button>
+            <button id="yearThree" class="yearButton">2016</button>
+        </div>
         <script src="search.js"></script>
     </body>
 </html>

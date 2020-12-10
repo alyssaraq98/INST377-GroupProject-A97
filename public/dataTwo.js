@@ -22,7 +22,7 @@ function convertAgenciesToCategories(agencyList) {
         if (!findCat) {
             collection.push({
             label: item.agency,
-            y: 1
+            y: 1,
         });
         } else {   
             const position = collection.findIndex((el) => el.label === item.agency);
@@ -76,11 +76,11 @@ function convertAgenciesToCategories(agencyList) {
     chart.render();
   }
 
-document.body.addEventListener('submit', async (e) => {
+document.body.addEventListener("submit", async (e) => {
     e.preventDefault();
     const form = $(e.target).serializeArray();
     console.log(form);
-    fetch('/api', {
+    fetch('/api2015', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
