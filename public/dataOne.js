@@ -7,7 +7,7 @@ document.getElementById("about").onclick = function () {
 }
 // Back Button
 document.getElementById("backButton").onclick = function () {
-    location.href = "/search.html";
+    location.href = "/index.html";
 }
 
 // Data Visualization Section

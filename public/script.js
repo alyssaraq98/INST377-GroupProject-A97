@@ -27,5 +27,5 @@ document.getElementById("about").onclick = function () {
   location.href = "/about.html";
 }
 document.getElementById("search").onclick = function () {
-  location.href = "/search.html";
+  location.href = "/index.html";
 }
