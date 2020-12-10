@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #CCC;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header h2 {
+    display: inline-block;
+
+}
+.menubar{
+    display: inline-block;
+
+}
+
+.menubar li {
+    list-style-type: none;
+    display: inline-flex;
+}

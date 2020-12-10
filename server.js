@@ -5,6 +5,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 
+
 dotenv.config();
 
 const app = express();
@@ -20,17 +21,40 @@ app.use((req, res, next) => {
   next();
 });
 
-app.route('/api')
+  app.route('/api2014')
   .get((req, res) => {
     console.log('GET request detected');
-    const data = await fetch('https://data.princegeorgescountymd.gov/resource/bh8z-9wkk.json');
-    const json = await data.json();
-    console.log('PG County data from fetch', json);
-    res.json(json);
-  })
+    res.send('Got it');
+  }) 
   .post(async (req, res) => {
-    const data = await fetch('https://data.princegeorgescountymd.gov/resource/bh8z-9wkk.json');
     console.log('POST request detected');
+    const data = await fetch('https://data.princegeorgescountymd.gov/resource/p9kn-7u2k.json');
+    const json = await data.json();
+    console.log('Fetch request data', data);
+    res.json(json);
+  });
+
+  app.route('/api2015')
+  .get((req, res) => {
+    console.log('GET request detected');
+    res.send('Got it');
+  }) 
+  .post(async (req, res) => {
+    console.log('POST request detected');
+    const data = await fetch('https://data.princegeorgescountymd.gov/resource/uh6s-izyj.json');
+    const json = await data.json();
+    console.log('Fetch request data', data);
+    res.json(json);
+  });
+
+  app.route('/api2016')
+  .get((req, res) => {
+    console.log('GET request detected');
+    res.send('Got it');
+  }) 
+  .post(async (req, res) => {
+    console.log('POST request detected');
+    const data = await fetch('https://data.princegeorgescountymd.gov/resource/csi4-9jzc.json');
     const json = await data.json();
     console.log('Fetch request data', data);
     res.json(json);
