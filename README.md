@@ -2,8 +2,7 @@
 Repository for INST377 class group project
 
 Search Page:
-The search page will have a search bar that lets users search an agency and click a button that will take them to
-the data visalization page.
+The search page will have a section of years where the user can select the year they would like to see data visualizations for.
 
 Data Page:
 The data page will present the data visualizations of the specific agency they are interested in researching.
