@@ -5,6 +5,9 @@ document.getElementById("home").onclick = function () {
 document.getElementById("about").onclick = function () {
     location.href = "/about.html";
 }
+document.getElementById("docs").onclick = function () {
+  location.href = "/docs.html";
+}
 // Back Button
 document.getElementById("backButton").onclick = function () {
     location.href = "/index.html";
