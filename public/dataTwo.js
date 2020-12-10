@@ -3,15 +3,15 @@ document.getElementById("home").onclick = function () {
     location.href = "/index.html";
 }
 document.getElementById("about").onclick = function () {
-    location.href = "/about.html";
+  location.href = "/about.html";
 }
-document.getElementById("search").onclick = function () {
-    location.href = "/search.html";
+document.getElementById("docs").onclick = function () {
+  location.href = "/docs.html";
 }
 
 // Back Button
 document.getElementById("backButton").onclick = function () {
-    location.href = "/search.html";
+    location.href = "/index.html";
 }
 
 // Data Visualization Section
