@@ -13,9 +13,9 @@ Link to Application: https://inst377-group-project-a97.herokuapp.com/
 
 Information Problem We're Trying to Solve: Visualizing Tax Data from Various Prince George's County Businesses
 
-Data Chosen to Work With:
-    - Prince George's County Spending Information for FY 2014-2016
+Data Chosen to Work With: Prince George's County Spending Information for FY 2014-2016
 
+Image Source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ASeal_of_Prince_George%2527s_County%2C_Maryland.svg&psig=AOvVaw2itqiFjpr3cKNvJXXDutQg&ust=1607730354934000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCPitnMDMxO0CFQAAAAAdAAAAABAJ
 
 Documentation TODO: 
 - ~~Title~~
