@@ -32,6 +32,10 @@ app.use((req, res, next) => {
     const json = await data.json();
     console.log('Fetch request data', data);
     res.json(json);
+  })
+  .put(async (req, res) => {
+    console.log('PUT Request detected')
+
   });
 
   app.route('/api2015')
@@ -45,6 +49,10 @@ app.use((req, res, next) => {
     const json = await data.json();
     console.log('Fetch request data', data);
     res.json(json);
+  })
+  .put(async (req, res) => {
+    console.log('PUT Request detected')
+
   });
 
   app.route('/api2016')
@@ -58,6 +66,9 @@ app.use((req, res, next) => {
     const json = await data.json();
     console.log('Fetch request data', data);
     res.json(json);
+  })
+  .put(async (req, res) => {
+    console.log('PUT Request detected')
   });
 
 app.listen(port, () => {
