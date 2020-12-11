@@ -39,3 +39,21 @@ body{
 img {
     margin: auto;
 }
+
+.years img {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.years .yearText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+}

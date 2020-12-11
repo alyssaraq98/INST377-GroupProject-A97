@@ -29,3 +29,15 @@ document.getElementById("about").onclick = function () {
 document.getElementById("docs").onclick = function () {
   location.href = "/docs.html";
 }
+
+// Year Section
+
+document.getElementById("yearOne").onclick = function () {
+  location.href = "/dataOne.html";
+}
+document.getElementById("yearTwo").onclick = function () {
+  location.href = "/dataTwo.html";
+}
+document.getElementById("yearThree").onclick = function () {
+  location.href = "/dataThree.html";
+}
