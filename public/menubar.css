@@ -35,3 +35,7 @@ body{
     list-style-type: none;
     display: inline-flex;
 }
+
+img {
+    margin: auto;
+}
