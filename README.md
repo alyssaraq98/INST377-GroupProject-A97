@@ -10,12 +10,9 @@ Our website is geared toward adults who pay taxes in Prince George’s County. W
 
 Heroku Link: https://inst377-group-project-a97.herokuapp.com/
 
-Target browsers: Desktop users
+Target browsers: Desktop users who work on Windows 10 OS
 
-Top Half of README TODO:
-
-- Link to User Manual
-- Link to Developer Manual
+Link to Developer Manual: See below for Developer Manual
 
 Bottom Half of README TODO:
 - The audience of this document is future developers who will take over your system.
