@@ -15,31 +15,34 @@ Target browsers: Desktop users who work on Windows 10 OS
 Link to Developer Manual: See below for Developer Manual
 
 Bottom Half of README TODO:
-- The audience of this document is future developers who will take over your system.
-- They know technical terms and have general knowledge about web applications, but do not have knowledge about your system design.
-- You need to provide a technical document so that future developers can start setting up the application on their local machines, and keep working on the system development after you leave the team.
-- Your Developer Manual covers:
-<<<<<<< HEAD
+
 How to install our application and all dependencies
+ - Clone the repository from GitHub onto your local machine.
+ - Use npm install in the terminal to install dependencies in node_modules folder. This will install all modules listed as dependencies in package.json.  
+ - Install canvas.js by using thse instructions: https://www.npmjs.com/package/canvasjs 
+ - Install bulma package by using these instructions: https://www.npmjs.com/package/bulma
+
+
 
 How to run our application on a server
+ - Use npm start to start the application and type localhost:3000 into your browser
 
 How to run any tests we have written for our software
  - We did not write any tests for our software, but feel free to write your own!
+ 
+The API for our server application - all GET, POST, PUT, etc endpoints, and what they each do
+ - API Endpoints:
+   - GET: Retrieve the data from the PG County Website. Each GET endpoint has an API URL that is fetched on the server and loaded onto the website through JSON files.
+   - POST: The POST endpoint takes data from the API that was fetched in the GET request and posts the information on the website.
+   - PUT: The PUT endpoint takes the data from the website and revises them through the JSON files.
 
-The API for your server application - all GET, POST, PUT, etc endpoints, and what they each do
-A clear set of expectations around known bugs and a road-map for future development.
-=======
-- How to install your application and all dependencies
-- How to run your application on a server
-- How to run any tests you have written for your software
-- The API for your server application - all GET, POST, PUT, etc endpoints, and what they each do
+Bugs
+ - In the 2015 dataset, the only pay names provided were only up to the letter 'A,' so this will give an incomplete dataset.
 
-API Endpoints:
+Future Development Plans
+ - Add more visualizations
+ - More options for users to group agencies
+ - Undergo user testing to gage usability and revise based on feedback
+ - Add more accessibility features
 
-GET: Retrieve the data from the PG County Website. Each GET endpoint has an API URL that is fetched on the server and loaded onto the website through JSON files.
-POST: The POST endpoint takes data from the API that was fetched in the GET request and posts the information on the website.
-PUT: The PUT endpoint takes the data from the website and revises them through the JSON files.
 
-- A clear set of expectations around known bugs and a road-map for future development.
->>>>>>> 31790a77ddac046a892e69965c9d7bc33bc04ea5
