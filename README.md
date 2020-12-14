@@ -14,15 +14,13 @@ Target browsers: Desktop users who work on Windows 10 OS
 
 Link to Developer Manual: See below for Developer Manual
 
-Bottom Half of README TODO:
+Developer Manual:
 
 How to install our application and all dependencies
  - Clone the repository from GitHub onto your local machine.
  - Use npm install in the terminal to install dependencies in node_modules folder. This will install all modules listed as dependencies in package.json.  
  - Install canvas.js by using thse instructions: https://www.npmjs.com/package/canvasjs 
  - Install bulma package by using these instructions: https://www.npmjs.com/package/bulma
-
-
 
 How to run our application on a server
  - Use npm start to start the application and type localhost:3000 into your browser
@@ -41,6 +39,7 @@ Bugs
 
 Future Development Plans
  - Add more visualizations
+ - Create mobile browsing page
  - More options for users to group agencies
  - Undergo user testing to gage usability and revise based on feedback
  - Add more accessibility features
