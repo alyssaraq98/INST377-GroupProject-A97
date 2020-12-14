@@ -1,6 +1,6 @@
 # Final Documentation for INST377 Group Project Team A97
 
-Title: PG County Tax Information
+Title: PG County Fiscal Year Spending Information
 
 Team Members: 
 * Andrew Carroll
@@ -11,7 +11,7 @@ Team Members:
 
 Link to Application: https://inst377-group-project-a97.herokuapp.com/
 
-Information Problem We're Trying to Solve: Visualizing Tax Data from Various Prince George's County Businesses
+Information Problem We're Trying to Solve: Visualizing Fiscal Year Spending Data from Various Prince George's County Businesses
 
 Identified Stakeholders/Target Browsers:
 * Stakeholders: Prince George’s County adult taxpayers & government officials
@@ -25,7 +25,7 @@ Image Source:
 Chosen Strategies & Solutions:
 * Front-End:
     * HTML/CSS
-    * Bulma - CSS library 
+    * Bulma - CSS Framework 
 * Back-End:
     * Json Files
     * Canvas.js - Data Visualizations
@@ -53,16 +53,3 @@ Possible Future Work Directions:
 * More options for users to group agencies
 * Undergo user testing to gage usability and revise based on feedback
 * Add more accessibility features
-
-Documentation TODO: 
-- ~~Title~~
-- ~~Team members~~
-- ~~Link to where your app is running~~
-- ~~Information problem you're trying to solve~~
-- ~~Identified stakeholders/target browsers~~
-- ~~Data you chose to work with~~
-- ~~Chosen strategies and solutions for the problem~~
-- ~~Technical system decision rationale~~
-- ~~How/if your final system helps to address the problem~~
-- ~~Challenges faced and impact on final design~~
-- ~~Possible future work directions with this problem~~
